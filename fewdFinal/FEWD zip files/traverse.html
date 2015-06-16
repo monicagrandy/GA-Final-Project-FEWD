@@ -1,0 +1,56 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<style>
+
+	.two, .two a {
+		color: brown;
+	}
+	
+	.pink, .pink a {
+		color: pink;
+	}
+
+</style>
+
+<h1>Headline</h1>
+
+<h2>Subhead</h2>
+
+<div id="content">
+
+	<p>This is a paragraph.</p>
+	
+	<p class="two">This is a paragraph.</p>
+	
+	<p>This is a paragraph.</p>
+	
+	<ul>
+		<li>List</li>
+		<li>List</li>
+		<li class="pink">List</li>
+		<li>List</li>
+		<li>List</li>
+	</ul>
+	
+	<p>This is a paragraph.</p>
+	
+</div> <!-- end content -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//$('.two').prev().css("color", "fuchsia");
+		//$('.two').next().css("color", "orange");
+		$('h1').next().css("font-weight", "normal");
+		
+		//$('#content').children().css("color", "yellow");
+		
+		//$(".pink").siblings().css("color", "green");
+		
+		$("li").click(function(){
+			$(this).addClass("pink");
+			$(this).siblings().removeClass("pink");
+		});
+		
+		$("#content").find(".pink").css("font-weight", "bold");
+	});
+</script>

@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Slide demo</title>
+<style>
+
+	.section {
+		overflow: hidden;
+		width: 900px;
+		margin: 0 auto;
+		padding: 4em;
+	}
+	
+	.green {
+		background: green;
+		color: #fff;
+	}
+	
+	.black {
+		background: #111;
+		color: #fff;
+	}
+	
+	.yellow {
+		background: yellow;
+	}
+	
+	.red {
+		background: #990000;
+		color: #fff;
+	}
+		
+	.bottomnav {
+		background: #cfcfcf;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="top"></div>
+<div class="section">
+<a href="#section1">Link 1</a> | <a href="#section2">Link 2</a> | <a href="#section3">Link 3</a> | <a href="#section4">Link 4</a>
+</div>
+
+<div class="bottomnav section">
+<a href="#section1">Link 1</a> | <a href="#section2">Link 2</a> | <a href="#section3">Link 3</a> | <a href="#section4">Link 4</a>
+</div>
+
+<div class="section green" id="section1">
+
+	<img src="http://placekitten.com/800/900">
+	<h2>I have an irrational love of cats.</h2>
+
+</div>
+
+<div class="section red" id="section2">
+
+	<p>Bacon ipsum dolor sit amet short loin swine meatloaf turducken jerky filet mignon bacon kielbasa pork. Biltong pork belly short loin, shank filet mignon ham hock sausage beef ribs pork loin leberkas chuck rump bacon. Tri-tip pancetta t-bone corned beef, swine flank pork loin brisket pig biltong beef. Salami turkey doner, capicola pancetta jowl kevin hamburger cow. Doner salami kevin turkey frankfurter tri-tip meatloaf. T-bone swine ground round ball tip brisket, shoulder prosciutto. Ribeye chuck shank, pancetta shankle pastrami corned beef biltong rump fatback ham hock.</p>
+	
+	<p>Pork belly landjaeger sirloin turkey pork. Tenderloin t-bone pig, shank flank andouille doner tongue short loin short ribs ground round salami ribeye ball tip shoulder. Tail sirloin bresaola ball tip andouille, venison short ribs boudin turducken short loin hamburger meatball tongue shoulder. Biltong porchetta pork, jerky pastrami beef beef ribs chicken. Drumstick tenderloin venison kevin capicola. Cow pancetta spare ribs t-bone shoulder. Sirloin ribeye short loin brisket drumstick prosciutto hamburger salami landjaeger.</p>
+	
+</div>
+
+<div class="section black" id="section3">
+
+	<img src="http://placekitten.com/300/300" align="right">
+	
+	<p>Shoulder shankle ball tip, andouille bacon strip steak swine bresaola tenderloin rump doner. Beef ribs brisket sausage, jowl drumstick meatloaf pork loin pastrami chuck porchetta jerky. Frankfurter turducken pork strip steak. Ham shankle pork chop leberkas, salami filet mignon bresaola tenderloin porchetta cow turducken chuck andouille. Bresaola landjaeger chuck short ribs ham hock turkey kielbasa tri-tip shank porchetta tenderloin prosciutto rump shankle bacon. Hamburger rump tongue doner biltong porchetta pig ball tip beef. Venison beef ribs brisket shank cow short loin bacon tongue swine beef pork.</p>
+	
+	<a href="#top">Back to top</a>
+
+</div>
+
+<div class="section yellow" id="section4">
+
+	<h1>WHAT? I CAN'T HEAR YOU!</h1>
+	
+	<h2>(I have a cat in my ear.)</h2>
+	
+	<img src="http://placekitten.com/600/400">
+
+</div>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+	
+		    var target = this.hash,
+		    $target = $(target);
+	
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 1100, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+		
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 400) { 
+				$(".bottomnav").fadeIn(1000);
+			} else {	
+				$(".bottomnav").fadeOut(1000);
+			}
+		});
+		
+	});
+</script>
+
+</body>
+</html>

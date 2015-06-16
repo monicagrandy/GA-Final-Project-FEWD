@@ -1,0 +1,112 @@
+<style>
+
+	input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"] {
+		background: #cfcfcf;
+		padding: 5px 10px;
+		font-size: 14px;
+		border: 1px solid #333;
+		border-radius: 10px;
+		width: 250px;
+	}
+	
+	label {
+		font-weight: bold;
+	}
+	
+	textarea {
+		width: 350px;
+		height: 100px;
+		border: 1px solid #333;
+		background: teal;
+		color: #fff;
+		padding: 5px;
+	}
+	
+	input[type="reset"] {
+		background: red;
+		padding: 5px 10px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+	}
+	
+	input[type="submit"] {
+		background: green;
+		padding: 5px 10px;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+	}
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<form method="post" action="">
+
+	<p><label for="fname">First Name:</label><br>
+	<input type="text" name="fname" id="fname" value=""></p>
+	
+	<p><label for="lname">Last Name:</label><br>
+	<input type="text" name="lname" id="lname" value=""></p>
+	
+	<p><input type="email" name="email" id="email" placeholder="Your Email Address" value=""></p>
+	
+	<p><input type="tel" name="phone" id="phone" placeholder="Your Phone Number" value=""></p>
+	
+	<p><input type="text" name="username" id="username" placeholder="Create a Username" value=""></p>
+	
+	<p><input type="password" name="password" id="password" placeholder="Create a Password" value=""></p>
+	
+	<p><label for="awesome">Are you awesome?</label><br>
+	<input type="radio" name="awesome" id="awesome" value="Yes" checked="checked"> Yes, duh!<br>
+	<input type="radio" name="awesome" id="awesome" value="No"> Nope!<br>
+	<input type="radio" name="awesome" id="awesome" value="Maybe"> I might be, maybe.
+	</p>
+	
+	<p><label for="color">Choose your favorite color:</label><br>
+	<input type="checkbox" name="color" value="Red"> Red<br>
+	<input type="checkbox" checked="checked" name="color" value="Blue"> Blue<br>
+	<input type="checkbox" name="color" value="Yellow"> Yellow<br>
+	<input type="checkbox" name="color" value="Green"> Green<br>
+	<input type="checkbox" name="color" value="Orange"> Orange<br>
+	<input type="checkbox" name="color" value="Indigo"> Indigo<br>
+	<input type="checkbox" name="color" value="Violet"> Violet
+	</p>
+	
+	<p><label for="date">Enter a date:</label><br>
+	<input type="date" name="date" id="date"></p>
+	
+	<label for="state">Choose a state:</label><br>
+	<select name="state" id="state">
+		<option value="">- Select an Option -</option>
+		<option value="CA">California</option>
+		<option value="AZ" selected="selected">Arizona</option>
+		<option value="DE">Delaware</option>
+		<option value="GU">Guam</option>
+	</select>
+	
+	<p>Upload a file:<br>
+	<input type="file" name="file" id="file">
+	</p>
+	
+	<label for="story">Tell me your life story:</label><br>
+	<textarea name="story" id="story"></textarea>
+	
+	<p><input type="button" name="button" id="button" value="I'm a button!">
+	
+	<input type="reset" name="reset" id="reset" value="Reset the form">
+	
+	<input type="submit" name="submit" id="submit" value="Submit stuff!"></p>
+
+</form>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#date').datepicker();
+	});
+</script>

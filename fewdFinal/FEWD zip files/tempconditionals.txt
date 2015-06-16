@@ -1,0 +1,19 @@
+temperature converter conditionals:
+
+if(temperature is celsius) {
+	convert it to fahrenheit
+} else {
+	convert it to celsius
+}
+
+if(blank is blank) {
+	give me an error message
+} else {
+	continue on
+}
+
+if(value is not a number) {
+	give me an error message 
+} else {
+	continue on
+}

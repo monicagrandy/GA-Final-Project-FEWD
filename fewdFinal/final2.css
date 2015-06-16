@@ -1,0 +1,732 @@
+body {
+	background-image: url("crossword.png");
+	font-family: 'Poiret One', cursive,  Arial;
+	font-size: 1em;
+}
+
+#container { 
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	background-image: url("crossword.png");
+}
+
+.clear {
+	clear: both;
+}
+
+#welcome {
+	width: 100%;
+	height: 710px;
+	margin-bottom: 1.5%;
+	overflow: hidden;
+	background-color: white;
+	text-align: center;
+	background-image: url("crossword.png");
+}
+
+#welcome h4 {
+	font-size: 2em;
+	color: black;
+	line-height: 1.5px
+}
+
+#welcome h1 {
+	font-size: 4em;
+	margin-top: 10%;
+	color: white;
+	font-size: 10em;
+	font-weight: bold;
+}
+
+#welcome h1 a {
+	text-decoration: none;
+}
+
+#H {
+	color: red;
+}
+
+#e {
+	color: orange;
+}
+
+#fl {
+	color: yellow;
+}
+
+#sl {
+	color: green;
+}
+
+#o {
+	color: blue;
+}
+
+#welcome h1:hover {
+	-webkit-transform: rotate(100deg) scale(5) translate(15px,80px);
+    -moz-transform: rotate(100deg) scale(5) translate(15px,80px);
+    -ms-transform: rotate(100deg) scale(5) translate(15px,80px);
+    transform: rotate(100deg) scale(5) translate(15px,80px);
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+	
+}
+
+#welcome nav {
+	text-align: center;
+}
+
+#welcome nav ul {
+    display: block;	
+    margin-top: 10%;
+}
+
+#welcome nav li{
+	list-style: none;
+	margin-left: 20%;
+	float: left;
+	padding: 7px;
+}
+
+#welcome nav li:hover {
+	-webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    background-color: #CC00FF;
+    border: 2px solid #CC00FF;
+	border-radius: 25px;
+}
+
+#welcome nav a{
+	color: black;
+	text-decoration: none;
+	font-size: 4em;
+}
+
+#about {
+	margin-top: 4%;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 1.5%;
+	overflow: hidden;
+	border: 1px solid #fff;
+	background-color: #ff4040;
+	border-radius: 100px;
+	text-align: center;
+
+}
+
+#about h1 {
+	margin-top: 10%;
+	margin-left: 300px;
+	color: white;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+#about small {
+	font-size: .5em;
+	font-weight: lighter;
+}
+
+#social {
+	width: 15%;
+	float:left;
+	margin-left: 100px;
+	margin-bottom: 200px;
+	
+}
+
+.fb {
+	position: relative;
+}
+
+#social .topfb {
+	background-color: #ff4040;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+	opacity: 1;
+	transition: all 1s ease-in-out;
+	z-index: 999;
+	position: relative;
+}
+
+#social .bottomfb {
+	top: 22px;
+	left: 20px;
+	z-index: 1;
+	position: absolute;
+}
+
+/*#fbicon img {
+	float: right;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+}*/
+
+#social .topfb:hover {
+	-webkit-transform: translateX(550px);
+    -moz-transform: translateX(550px);
+    -ms-transform: translateX(550px);
+    transform: translateX(550px);
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    background-color: #3B5998;
+    border-radius: 25%;
+}
+
+#social .topfb a {
+	color: white;
+	font-weight:bold;
+	margin-top: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+.insta {
+	position: relative;
+}
+
+#social .topinsta {
+	background-color: #ff4040;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+	opacity: 1;
+	transition: all 1s ease-in-out;
+	z-index: 999;
+	position: relative;
+}
+
+#social .bottominsta {
+	top: 22px;
+	left: 20px;
+	z-index: 1;
+	position: absolute;
+}
+
+#social .topinsta:hover {
+	-webkit-transform: translateX(550px);
+    -moz-transform: translateX(550px);
+    -ms-transform: translateX(550px);
+    transform: translateX(550px);
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    background-color: #517fa4;
+    border-radius: 25%;
+}
+
+#social .topinsta a {
+	color: white;
+	font-weight:bold;
+	margin-top: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+.twitter {
+	position: relative;
+}
+
+#social .toptwitter {
+	background-color: #ff4040;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+	opacity: 1;
+	transition: all 1s ease-in-out;
+	z-index: 999;
+	position: relative;
+}
+
+#social .bottomtwitter {
+	top: 22px;
+	left: 20px;
+	z-index: 1;
+	position: absolute;
+}
+
+#social .toptwitter:hover {
+	-webkit-transform: translateX(550px);
+    -moz-transform: translateX(550px);
+    -ms-transform: translateX(550px);
+    transform: translateX(550px);
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    background-color: #00aced;
+    border-radius: 25%;
+}
+
+#social .toptwitter a {
+	color: white;
+	font-weight:bold;
+	margin-top: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+#about  blockquote {
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#aboutgood {
+	width: 30%;
+	float: left;
+	margin-right: -45px;
+	margin-left:50px;
+	margin-bottom: -10px;
+	margin-top: -10px;
+	line-height: 25px;
+}
+
+#aboutbad {
+	width: 30%;
+	margin-top: -10px;
+	float: right;
+	margin-right: 50px;
+	line-height: 25px;
+}
+
+#main {
+	width: 100%;
+	overflow: hidden;
+	border: .5px solid white;
+	border-radius: 10%;
+}
+
+#main .selectgood { 
+	width: 49%;
+	height: 700px;
+	margin-right: 0px;
+	background-color: #fcce1c;
+	text-align: center;
+	float: left;
+}
+
+#main .selectgood p {
+	padding-top: 7%;
+}
+
+#main .selectgood p a {
+	color: #FF6666;
+	font-style: bold;
+	text-decoration: none;
+	font-size: 3em;
+	font-weight: bold;
+	display: block;
+}
+
+#main .selectgood:hover {
+	background-image: url('http://amybethunephotography.com/wp-content/uploads/2012/11/quotes_sunshine.jpg');
+}
+
+/*.question { 
+	width: 100%;
+	height: 200px;
+	background: #fff;
+	color: purple;
+	text-align: center;
+}
+
+.question p  {
+	padding-top:7%;
+	color: magenta;
+	font-style: bold;
+	text-decoration: none;
+	font-size: 3em;
+	font-weight: bold;
+	display: block;*/
+
+
+#main .selectbad { 
+	width: 49%;
+	height: 700px;
+	margin-left: 0px;
+	background-color: #2f2f2f;
+	text-align: center;
+	float: right;
+}
+
+#main .selectbad p {
+	padding-top:7%;
+}
+
+#main .selectbad p a {
+	color: #d9d7d7;
+	font-style: bold;
+	text-decoration: none;
+	font-size: 3em;
+	font-weight: bold;
+	display: block;
+}
+
+#main .selectbad:hover {
+	background-image: url('https://ltbcomedy.files.wordpress.com/2014/01/a-charlie-brown-thanksgiving-peanuts-26552738-1067-800.jpg');
+}
+
+.submitgood {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 3px solid #FF6666;
+	border-radius: 25%;
+	background-image: url('crossword.png');
+	font-weight: bold;
+	color: #FF6666;
+	/*float: right;*/
+	right: 15px;
+	top: 30%;
+	position: fixed;
+}
+
+.submitgood input[type="button"] {
+	background-color: #FF6666;
+	color: white;
+}
+
+.submitbad {
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid navy;
+	border-radius: 25%;
+	background-image: url('crossword.png');
+	color: navy;
+	font-weight: bold;
+	/*float: right;*/
+	left: 15px;
+	top: 30%;
+	position: fixed;
+}
+
+.submitbad input[type="button"] {
+	background-color: navy;
+	color: white;
+}
+
+/*#gallery {
+	width: 90%;
+}*/
+
+#good-pic {
+	margin: 0 auto;
+}
+
+#bad-pic {
+	margin: 0 auto;
+	
+}
+
+.gbox img, .bbox img {
+	opacity: 0.001;
+}
+
+.gbox {
+	float: left;
+	/*width: 300px;
+	height: 200px;*/
+	background: #fcce1c;
+	overflow: hidden;
+	position: relative;
+	margin-left: 4.2em;
+	margin-bottom: 1.5em;
+	-webkit-transition: all 0.7s ease-in-out;
+	transtion:all 0.7s ease-in-out;
+}
+
+.bbox {
+	float: left;
+	/*width: 300px;
+	height: 200px;*/
+	background: #2f2f2f;
+	overflow: hidden;
+	position: relative;
+	margin-left: 4.2em;
+	margin-bottom: 1.5em;
+	-webkit-transition: all 0.5s ease-in-out;
+	transtion:all 0.5s ease-in-out;
+}
+
+.caption {
+	position: absolute; /*taken out of regular flow*/
+	color: #fff;
+	display: none;
+	background: #333;
+	top: 300px;
+	width: 100%;
+	height: 10%;
+	opacity: 0.7;
+	-webkit-transition: all 0.7s ease-in-out;
+	transtion:all 0.7s ease-in-out;
+}
+
+.caption p {
+	padding: 0.5em;
+	margin: 0;
+}
+
+.likebuttonone input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttontwo input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttonthree input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttonfour input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttonfive input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttonsix input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttonseven input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.likebuttoneight input[type="button"] {
+	margin: 0 auto;
+	color: #ff4040;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+
+.sadbuttonone input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttontwo input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttonthree input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttonfour input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttonfive input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttonsix input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttonseven input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+.sadbuttoneight input[type="button"] {
+	margin: 0 auto;
+	color: navy;
+	margin-left: 140px;
+	margin-bottom: 5px;
+}
+
+.gclick {
+	background-image: url('http://ih0.redbubble.net/image.23803058.4488/flat,550x550,075,f.u3.jpg');
+}
+
+.bclick {
+	background-image: url('http://i2.cdn.turner.com/dr/hln/www/release/sites/default/files/imagecache/textarticle_640/2014/04/02/got.png');
+}
+
+.gbox:hover {
+	border-radius: 7.5%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.gbox:hover img {
+	opacity: 1;
+	/*width: 300px;
+	height: 450px;*/
+}
+
+.gbox:hover .caption {
+	top: 0;
+	display: block;
+}
+
+.bbox:hover {
+	border-radius: 7.5%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.bbox:hover img {
+	opacity: 1;
+	/*width: 300px;
+	height: 450px;*/
+}
+
+.bbox:hover .caption {
+	top: 0;
+	display: block;
+}
+
+#submission {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 1.5%;
+	overflow: hidden;
+	background-image: url("crossword.png");
+	text-align: center;
+	color: white;
+}
+
+#submission h2 {
+	font-size: 3em;
+	margin-bottom: 0px;
+	color: #00CC66;
+	margin-top: 2.5%
+}
+
+#submission p {
+	margin-top: 0px;
+	font-size: 1.5em;
+	color: #00CC66;
+	font-style: italic;
+}
+
+#submission .submithover:hover {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	color: white;
+	background-color: #66FF66;
+	border: 1px solid #66FF66;
+	border-radius: 10%;
+}
+
+form {
+	background-image: url("crossword.png");
+	color: #66FF66;
+}
+
+input[type="email"] {
+	margin-top: 10px;
+	background: #D1FFD1;
+	padding: 5px 10px;
+	font-size: 14px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	width: 250px;
+	color: #00CC66;
+}
+
+textarea {
+	margin-top: 10px;
+	width: 175px;
+	height: 75px;
+	border: 1px solid #333;
+	background-color: #D1FFD1;
+	border-radius: 10px;
+	color: #00CC66;
+	padding: 10px;
+}
+
+input[type="reset"] {
+	background: white;
+	padding: 5px 10px;
+	text-align: center;
+	color: #66FF66;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+input[type="reset"]:hover {
+	background: #66FF66 ;
+	color: white;
+}
+
+input[type="submit"] {
+	background: white;
+	padding: 5px 10px;
+	text-align: center;
+	color: #66FF66;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+	background: #66FF66 ;
+	color: white;
+}
+
+input[type="button"] {
+	background: white;
+	padding: 5px 10px;
+	text-align: center;
+	color: #66FF66;
+	font-weight: bold;
+	border-radius: 10px;
+}
+	
+input[type="button"]:hover {
+	background: #66FF66 ;
+	color: white;
+}
+
+
+
+
+
